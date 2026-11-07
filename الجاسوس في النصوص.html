@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مقدمة في علم النفس – دليل المذاكرة</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f3fb;--card:#fff;--tx:#1d1b2e;--mu:#6b6885;--pr:#5b4bdb;--ok:#16a34a;--no:#dc2626;--bd:#e3e0f3;--c:#5b4bdb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#12111c;--card:#1d1b2e;--tx:#efeefb;--mu:#a09cc2;--bd:#34314f;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#12111c;--card:#1d1b2e;--tx:#efeefb;--mu:#a09cc2;--bd:#34314f;color-scheme:dark}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}button{touch-action:manipulation}html{-webkit-text-size-adjust:100%;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Cairo,Tahoma,sans-serif;line-height:1.8}
+header{background:linear-gradient(135deg,#5b4bdb,#a855f7);color:#fff;padding:26px 16px 60px;text-align:center}
+header h1{margin:0;font-size:1.7rem;font-weight:800}header p{margin:4px 0 0;opacity:.9}
+nav.tabs{position:-webkit-sticky;position:sticky;top:0;z-index:5;display:flex;gap:6px;justify-content:center;padding:8px;background:var(--card);border-bottom:1px solid var(--bd);margin-top:-30px;overflow-x:auto}
+nav.tabs button{font:inherit;font-weight:600;border:0;background:transparent;color:var(--mu);padding:8px 16px;border-radius:99px;cursor:pointer;white-space:nowrap}
+nav.tabs button.on{background:var(--pr);color:#fff}
+main{max-width:860px;margin:0 auto;padding:16px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:4px 0 10px}
+.chips button{font:inherit;font-size:.82rem;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:4px 12px;border-radius:99px;cursor:pointer;white-space:nowrap}
+.chips button.on{background:var(--c);border-color:var(--c);color:#fff}
+.bar{height:6px;background:var(--bd);border-radius:9px;overflow:hidden;margin-bottom:14px}.bar i{display:block;height:100%;background:var(--c);transition:width .3s}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:18px;margin-bottom:12px}
+.hd{border-inline-start:6px solid var(--c)}
+.hd h2{margin:0;font-size:1.3rem}.hd small{color:var(--mu);font-size:.95rem}
+.it{border-inline-start:4px solid var(--c);padding:6px 12px;margin:10px 0;background:rgba(127,127,160,.1);background:color-mix(in srgb,var(--c) 7%,transparent);border-radius:8px}
+.it b{display:block;direction:ltr;text-align:left;font-weight:600}.it span{color:var(--mu)}
+.nv{display:flex;justify-content:space-between;gap:8px;margin-top:14px}
+.btn{font:inherit;font-weight:600;border:0;background:var(--pr);color:#fff;padding:10px 20px;border-radius:12px;cursor:pointer}
+.btn.g{background:var(--card);color:var(--tx);border:1px solid var(--bd)}.btn:disabled{opacity:.4}
+.q{direction:ltr;text-align:left;font-weight:600;margin-bottom:8px}
+.o{display:block;width:100%;direction:ltr;text-align:left;font:inherit;background:var(--bg);color:var(--tx);border:1.5px solid var(--bd);border-radius:12px;padding:8px 12px;margin:6px 0;cursor:pointer}
+.o:hover{border-color:var(--pr)}.o.sel{border-color:var(--pr);background:rgba(91,75,219,.2)}.o:disabled{opacity:1;color:var(--tx);cursor:default}nav.tabs button:disabled{opacity:.4}.sc{align-items:center}.o.ok{border-color:var(--ok);background:rgba(22,163,74,.2);background:color-mix(in srgb,var(--ok) 18%,transparent)}.o.no{border-color:var(--no);background:rgba(220,38,38,.2);background:color-mix(in srgb,var(--no) 18%,transparent)}
+.ans{display:none;margin-top:8px;padding:10px;border-radius:10px;background:rgba(22,163,74,.15);background:color-mix(in srgb,var(--ok) 14%,transparent)}.ans.s{display:block}
+.sec{font-weight:800;margin:20px 0 8px;color:var(--pr);font-size:1.1rem}
+.sc{position:-webkit-sticky;position:sticky;top:52px;z-index:4;background:var(--pr);color:#fff;border-radius:12px;padding:8px 14px;display:flex;justify-content:space-between;margin-bottom:12px}
+.tag{display:inline-block;font-size:.75rem;background:var(--pr);color:#fff;border-radius:99px;padding:0 10px;margin-inline-end:6px}
+</style></head><body>
+<header><h1>🧠 مقدمة في علم النفس</h1><p>ملخص تفاعلي ← أسئلة ← تطبيق ← اختبارات شاملة</p></header>
+<nav class="tabs" id="tabs"></nav><main id="m"></main>
+<script>
+const P=[
+["Definition of Psychology","تعريف علم النفس","#5b4bdb",[["The scientific study of behavior and mental processes","الدراسة العلمية للسلوك والعمليات العقلية"],["Uses strict, standardized scientific methods","يستخدم إجراءات علمية موحدة لجمع المعلومات وتحليلها"]]],
+["Definition of Behavior","تعريف السلوك","#0ea5e9",[["Anything a person or animal does, feels, or thinks","أي شيء يفعله الإنسان أو الحيوان أو يشعر به أو يفكر فيه"],["Overt behavior: visible “doing” (hug, handshake)","السلوك الظاهر: يمكن ملاحظته (العناق، المصافحة)"],["Covert behavior: thoughts and emotions","السلوك الباطن: الأفكار والمشاعر قبل الفعل"]]],
+["Goals of Psychology","أهداف علم النفس","#10b981",[["Describe: careful scientific observation","الوصف: ملاحظة علمية دقيقة"],["Explain: experiments to find causes","التفسير: تجارب لتحديد الأسباب"],["Predict: when a behavior will occur","التنبؤ: متى سيحدث السلوك مستقبلًا"],["Change: apply findings to modify inappropriate behavior","التغيير: تعديل السلوك غير المناسب"]]],
+["APA Divisions & Approaches","أقسام APA ومعنى المدرسة","#f59e0b",[["Examples: General, Clinical, Counseling, Educational, Developmental, Humanistic","أمثلة: عام، إكلينيكي، إرشادي، تربوي، نمو، إنساني"],["Approach = a perspective with assumptions about behavior","المدخل = منظور له افتراضات عن طبيعة السلوك ومنهج دراسته"],["No single perspective is correct; each has strengths and weaknesses","لا يوجد منظور صحيح وحده؛ لكل نقاط قوة وضعف"],["5 main approaches","خمسة مداخل رئيسية"]]],
+["Behaviorist Perspective","المدرسة السلوكية","#ef4444",[["Studies observable behavior as learned S-R (Stimulus-Response) units","تدرس السلوك الملاحظ كوحدات مثير–استجابة متعلمة"],["Classical conditioning (Pavlov): learning by association; dogs salivate to a bell","الإشراط الكلاسيكي (بافلوف): التعلم بالارتباط"],["Applications: systematic desensitization (phobias), aversion therapy","تطبيقات: إزالة الحساسية التدريجية للرهاب، العلاج التنفيري"],["Operant conditioning (Skinner): learning from consequences","الإشراط الإجرائي (سكينر): التعلم من نتائج السلوك"],["Positive reinforcement, negative reinforcement, punishment","تعزيز إيجابي، تعزيز سلبي، عقاب"],["Criticism: underestimates complexity; animal studies; cannot explain language","نقد: تبسّط السلوك، دراسات حيوانية، لا تفسر اكتساب اللغة"]]],
+["Psychodynamic Perspective","مدرسة التحليل النفسي","#8b5cf6",[["Freud: childhood events and the unconscious determine behavior; little free will","فرويد: الطفولة واللاشعور يحددان السلوك مع إرادة حرة محدودة"],["Iceberg: visible behavior is small; unconscious is the submerged part","جبل الجليد: السلوك الظاهر قليل واللاشعور هو الأعمق"],["Access to unconscious: free association, dream analysis, slips of the tongue","التداعي الحر، تحليل الأحلام، فلتات اللسان"],["Id (Eros = life, Thanatos = death), Ego, Superego","الهو (إيروس غريزة الحياة، ثاناتوس غريزة الموت)، الأنا، الأنا الأعلى"],["Ego resolves id–superego conflict; defense mechanisms reduce anxiety","الأنا تحل الصراع والحيل الدفاعية تخفض القلق"],["Psychosexual stages; phallic stage: Oedipus (boys) / Electra (girls)","المراحل النفسجنسية؛ المرحلة القضيبية: أوديب / إلكترا"],["Criticism: overstresses sexuality, not scientific (circular)","نقد: مبالغة في الجنس، غير علمية ولا يمكن إثباتها"]]],
+["Humanism","المدرسة الإنسانية","#ec4899",[["Studies the whole person (holism) through their own eyes","دراسة الشخص ككل (الشمولية) من وجهة نظره"],["Behavior linked to inner feelings and self-image","السلوك مرتبط بالمشاعر الداخلية وصورة الذات"],["Free will to change at any time; each person is unique","إرادة حرة للتغيير في أي وقت؛ كل فرد فريد"],["Self-actualization: innate desire to reach highest potential","تحقيق الذات: الرغبة الفطرية لبلوغ أقصى إمكانات"],["Rejects scientific methods; key figures: Carl Rogers, Abraham Maslow","ترفض المنهج العلمي؛ أهم روادها روجرز وماسلو"]]],
+["Cognitive Psychology","علم النفس المعرفي","#06b6d4",[["Wundt, 1879: first psychological laboratory","فونت 1879: أول معمل لعلم النفس"],["Studies mental processes: memory, perception, attention","يدرس العمليات العقلية: الذاكرة، الإدراك، الانتباه"],["Mind as computer: input – process – output","العقل كالحاسوب: مدخلات – معالجة – مخرجات"],["Memory stages: encoding, storage, retrieval","مراحل الذاكرة: ترميز، تخزين، استرجاع"],["Lab experiments; applications: cognitive therapy, eyewitness testimony","تجارب معملية؛ تطبيقات: العلاج المعرفي وشهادة العيان"]]],
+["Biological Psychology","علم النفس البيولوجي","#22c55e",[["Darwin 1859: genetics and natural selection influence behavior","داروين 1859: الوراثة والانتقاء الطبيعي"],["Behavioral genomics: genes, chromosomes, hormones, brain","علم الجينوم السلوكي: الجينات، الكروموسومات، الهرمونات، المخ"],["Example: fathers’ testosterone drops >30% after birth","مثال: انخفاض تستوستيرون الآباء بعد الولادة"],["Schizophrenia linked to dopamine levels","الفصام مرتبط بمستوى الدوبامين"],["Helped psychiatry (drugs) but may treat symptoms, not causes","ساعد الطب النفسي (الأدوية) لكنه يعالج الأعراض لا الأسباب"]]],
+["Evolutionary Psychology","علم النفس التطوري","#f97316",[["Brain evolved to solve problems of hunter-gatherer ancestors (Pleistocene)","المخ تطور لحل مشكلات الأسلاف الصيادين"],["EEA: Environment of Evolutionary Adaptation","بيئة التكيف التطوري"],["Natural selection (survive) and sexual selection (mates, offspring)","الانتقاء الطبيعي والجنسي"],["Strength: explains dysfunctional behavior (anorexia) and stress response to bank overdraft","القوة: تفسر سلوكيات تبدو غير وظيفية واستجابة الضغط الحديثة"]]],
+["Perspectives Conclusion","الخلاصة","#64748b",[["No perspective is superior; they contradict, overlap and build on each other","لا منظور أقوى؛ تتناقض وتتداخل وتبني على بعضها"],["Behaviorism & cognitive: scientific but ignore subjective experience","السلوكية والمعرفية علميتان لكن تتجاهلان الخبرة الذاتية"],["Humanistic: recognizes experience but not scientific","الإنسانية تعترف بالخبرة لكنها غير علمية"],["Psychodynamic: too much on unconscious/childhood","التحليلية تركز على اللاشعور والطفولة"],["Biological: reduces humans to mechanisms, ignores consciousness & environment","البيولوجية تختزل الإنسان في آليات"]]]];
+const QA=[["What is the definition of psychology?","The scientific study of behavior and mental processes, using strict scientific methods.<br>هو الدراسة العلمية للسلوك والعمليات العقلية."],["Overt vs covert behavior?","Overt = observable actions (handshake). Covert = internal thoughts and emotions.<br>الظاهر يُلاحظ، والباطن أفكار ومشاعر داخلية."],["Goals of psychology?","Describe, explain, predict, change behavior.<br>وصف، تفسير، تنبؤ، تغيير."],["Schools of psychology?","Behaviorist, Psychodynamic, Humanistic, Cognitive, Biological (+ Evolutionary).<br>السلوكية، التحليلية، الإنسانية، المعرفية، البيولوجية (+ التطورية)."]];
+const AP=[["A person fears elevators; a therapist exposes them to elevators step by step.","Which approach and technique?","Behaviorist – classical conditioning – systematic desensitization.<br>سلوكية: إزالة الحساسية التدريجية."],["A student gets praise and chocolate for studying, so studies more.","What process is this?","Operant conditioning – positive reinforcement.<br>إشراط إجرائي: تعزيز إيجابي."],["A patient says the wrong name by accident and it reveals hidden feelings.","Which approach?","Psychodynamic – slip of the tongue reveals the unconscious.<br>التحليل النفسي: فلتة لسان."],["A researcher studies memory and attention in a lab, comparing the mind to a computer.","Which approach?","Cognitive – information processing.<br>المدخل المعرفي."],["A counselor focuses on a client’s self-image and potential for growth.","Which approach?","Humanism – self-actualization (Rogers/Maslow).<br>الإنسانية."],["A scientist links schizophrenia symptoms to dopamine levels.","Which approach?","Biological psychology.<br>علم النفس البيولوجي."],["A study explains anorexia as an ancient adaptive mechanism.","Which approach?","Evolutionary psychology.<br>علم النفس التطوري."]];
+const M=`Who founded the first psychological laboratory in 1879?|Freud|Wundt|Pavlov|Skinner|1
+The four goals of psychology are:|Describe, explain, predict, change|Observe, dream, judge, treat|Read, write, test, grade|Define, hide, repeat, stop|0
+Shaking a friend’s hand is an example of:|Covert behavior|Overt behavior|Instinct|Unconscious|1
+Classical conditioning involves learning by:|Consequences|Association|Insight|Imitation|1
+Who studied operant conditioning?|Pavlov|Rogers|Skinner|Darwin|2
+Freud compared the mind to:|A computer|An iceberg|A machine|A tree|1
+Which approach emphasizes self-actualization?|Behaviorist|Humanism|Biological|Evolutionary|1
+The memory stages in the cognitive view are:|Id, ego, superego|Encoding, storage, retrieval|Stimulus, response, reward|Oral, anal, phallic|1
+Biological psychologists link schizophrenia to:|Dopamine levels|Bell sounds|Slips of tongue|Self-image|0
+EEA stands for:|Environment of Evolutionary Adaptation|Early Education Approach|Experimental Emotion Analysis|Evolved Ego Activity|0
+Pavlov conditioned dogs to salivate to:|A light|A bell|A lever|A smell|1
+Positive reinforcement, negative reinforcement and punishment belong to:|Operant conditioning|Free association|Holism|Psychoanalysis|0
+Which is NOT a Freudian method for reaching the unconscious?|Free association|Dream analysis|Lab experiments|Slips of the tongue|2
+The life instinct in the id is:|Thanatos|Eros|Ego|Superego|1
+Who mediates between the id and the superego?|Ego|Response|Genome|Cortex|0
+Systematic desensitization is used for:|Phobias|Memory loss|Dreams|Hormones|0
+Rogers and Maslow belong to:|Psychodynamic|Humanistic|Cognitive|Behaviorist|1
+The cognitive approach compares people to:|Animals|Computers|Reflex machines|Children|1
+Darwin’s 1859 work highlights:|Natural selection|Dream analysis|Operant shaping|Holism|0
+Humanists regard scientific methods as:|Essential|Inappropriate for studying behavior|Only for animals|Identical to Freud’s|1
+Behavior in psychology means:|Only visible actions|Anything one does, feels or thinks|Only thoughts|Only reflexes|1
+Behaviorism reduces behavior to:|S-R units|Dreams|Genes only|Self-image|0
+A criticism of behaviorism is that it:|Ignores animals|Underestimates human complexity|Stresses the unconscious|Is not scientific|1
+In the phallic stage boys experience:|Electra complex|Oedipus complex|Id conflict|Thanatos|1
+Psychoanalysis is criticized for:|Being too biological|Over-emphasizing sexuality, not scientific|Being too cognitive|Being too behavioral|1
+Holism means studying:|Only genes|The whole person|Only the brain|Only reflexes|1
+Cognitive therapy and eyewitness testimony apply the:|Cognitive approach|Humanism|Psychodynamic|Evolutionary|0
+Fathers’ testosterone drop after birth is explained as:|An adaptive function|Operant punishment|A dream symbol|Self-actualization|0
+The evolutionary approach can explain:|Only learning|Seemingly dysfunctional behavior like anorexia|Only memory|Nothing modern|1
+Which perspective has the most explanatory power?|Biological|Humanistic|None; they complement each other|Behaviorist|2`.split("\n").map(l=>l.split("|"));
+const TF=[["Psychology uses strict scientific methods.",1],["Humanists believe people have little free will.",0],["Operant conditioning is learning from consequences.",1],["Covert behavior can be directly observed.",0],["The id and superego are constantly in conflict.",1],["Wundt opened the first psychology lab in 1879.",1],["Pavlov studied operant conditioning.",0],["Behaviorism studies observable behavior.",1],["Genes, hormones and the brain influence behavior in the biological view.",1],["The psychodynamic view stresses socialization most.",0],["Cognitive memory has three stages.",1],["Skinner founded psychoanalysis.",0],["Evolutionary psychology says the mind evolved to solve ancestral problems.",1],["Humanists say people can change at any time.",1],["One perspective is completely correct.",0]];
+const G=`Behavior|سلوك;Overt behavior|سلوك ظاهر;Covert behavior|سلوك باطن;Stimulus|مثير;Response|استجابة;Reinforcement|تعزيز;Punishment|عقاب;Unconscious mind|العقل اللاواعي;Defense mechanisms|حيل دفاعية;Free will|الإرادة الحرة;Self-actualization|تحقيق الذات;Self-image|صورة الذات;Perception|إدراك;Memory|ذاكرة;Attention|انتباه;Encoding|ترميز;Storage|تخزين;Retrieval|استرجاع;Natural selection|الانتقاء الطبيعي;Genes|جينات;Hormones|هرمونات;Neurotransmitter|ناقل عصبي;Adaptive|تكيفي;Phobia|رهاب;Desensitization|إزالة الحساسية;Association|ارتباط;Prediction|تنبؤ;Explanation|تفسير;Holism|الشمولية;Instinct|غريزة`.split(";").map(x=>x.split("|"));
+const $=s=>document.querySelector(s),m=$("#m");let tab=0,part=0;
+const T=["📖 الملخص","❓ أسئلة المقرر","🧩 تطبيق","📝 الاختبارات"];
+function tabs(){$("#tabs").innerHTML=T.map((t,i)=>`<button class="${i==tab?'on':''}" data-a="tab" data-v="${i}" ${live?'disabled':''}>${t}</button>`).join("")}
+function go(){tabs();[sum,qa,app,exams][tab]();scrollTo(0,0)}
+function sum(){const p=P[part];document.documentElement.style.setProperty("--c",p[2]);
+m.innerHTML=`<div class="chips">${P.map((x,i)=>`<button class="${i==part?'on':''}" data-a="part" data-v="${i}">${i+1}. ${x[1]}</button>`).join("")}</div>
+<div class="bar"><i style="width:${(part+1)/P.length*100}%"></i></div>
+<div class="card hd"><h2>${p[0]}</h2><small>${p[1]} • جزء ${part+1} من ${P.length}</small></div>
+<div class="card">${p[3].map(([e,a])=>`<div class="it"><b>${e}</b><span>${a}</span></div>`).join("")}</div>
+<div class="nv"><button class="btn g" ${part?'':'disabled'} data-a="prev">→ السابق</button><button class="btn" data-a="${part<P.length-1?'next':'toqa'}">${part<P.length-1?'التالي ←':'ابدأ الأسئلة ←'}</button></div>`}
+function rev(i){document.getElementById("a"+i).classList.toggle("s")}
+function qa(){document.documentElement.style.setProperty("--c","#5b4bdb");m.innerHTML=`<div class="sec">أسئلة نهاية المقرر – فكّر ثم اكشف الإجابة</div>`+QA.map((q,i)=>`<div class="card"><div class="q">${i+1}. ${q[0]}</div><button class="btn g" data-a="rev" data-v="q${i}">إظهار الإجابة</button><div class="ans" id="aq${i}" style="direction:ltr;text-align:left">${q[1]}</div></div>`).join("")}
+function app(){m.innerHTML=`<div class="sec">تطبيق: حدّد المدخل أو العملية</div>`+AP.map((q,i)=>`<div class="card"><span class="tag">موقف ${i+1}</span><div class="q" style="margin-top:6px">${q[0]}<br><i>${q[1]}</i></div><button class="btn g" data-a="rev" data-v="p${i}">اكشف الحل</button><div class="ans" id="ap${i}" style="direction:ltr;text-align:left">${q[2]}</div></div>`).join("")}
+let sc={t:0,r:0};
+let live=null,tm=null;
+function ch(btn){if(!live)return;const q=btn.parentNode;[...q.children].forEach(b=>b.classList.remove("sel"));btn.classList.add("sel");q.dataset.d=1;upd()}
+function upd(){const el=$("#sc");if(!el||!live)return;const left=Math.max(0,Math.round((live.end-Date.now())/1000));el.innerHTML=`<span>⏱ ${String(Math.floor(left/60)).padStart(2,"0")}:${String(left%60).padStart(2,"0")}</span><span>أجبت ${document.querySelectorAll("[data-d]").length} / 25</span><button class="btn" style="padding:2px 14px" data-a="fin">تسليم</button>`;if(left<=0)fin()}
+function fin(){if(!live)return;const k=live.k;clearInterval(tm);window.onbeforeunload=null;try{localStorage.removeItem("xs")}catch(e){}live=null;let r=0;document.querySelectorAll(".o").forEach(b=>{const ok=b.dataset.k=="1",sel=b.classList.contains("sel");if(ok)b.classList.add("ok");else if(sel)b.classList.add("no");if(ok&&sel)r++;b.disabled=true});$("#sc").innerHTML=`<span>النتيجة النهائية: ${r} / 25</span><span>انتهى الاختبار</span>`;$("#endnav").innerHTML=`<button class="btn g" data-a="exams">→ النماذج</button><button class="btn" data-a="ex" data-v="${k}">إعادة ↻</button>`;tabs();scrollTo(0,0)}
+function opts(o,k){return `<div>${o.map(([t,c])=>`<button class="o" data-k="${c?1:0}" data-a="ch" data-ok="${c?1:0}">${t}</button>`).join("")}</div>`}
+function exams(){document.documentElement.style.setProperty("--c","#5b4bdb");m.innerHTML=`<div class="sec">اختر النموذج (25 سؤالًا)</div><div class="card">⚠️ مدة الاختبار 30 دقيقة. بمجرد بدء النموذج لا يمكنك العودة للمحتوى أو مغادرة الاختبار حتى التسليم أو انتهاء الوقت، وتظهر النتيجة والإجابات الصحيحة بعد التسليم.</div><div class="nv" style="justify-content:center">${[1,2,3].map(i=>`<button class="btn" data-a="ex" data-v="${i-1}">نموذج ${i}</button>`).join("")}</div>`}
+function ex(k,end){clearInterval(tm);live={k,end:end||Date.now()+1800000};try{localStorage.setItem("xs",JSON.stringify(live))}catch(e){}window.onbeforeunload=()=>"";tm=setInterval(upd,1000);tabs();let h=`<div class="sc" id="sc"></div><div class="sec">نموذج ${k+1} – اختر (10)</div>`,n=1;
+for(let i=0;i<10;i++){const q=M[k*10+i],c=+q[5];h+=`<div class="card"><div class="q">${n++}. ${q[0]}</div>${opts([1,2,3,4].map(j=>[q[j],j-1==c]))}</div>`}
+h+=`<div class="sec">صح أم خطأ (5)</div>`;for(let i=0;i<5;i++){const q=TF[k*5+i];h+=`<div class="card"><div class="q">${n++}. ${q[0]}</div>${opts([["True",q[1]==1],["False",q[1]==0]])}</div>`}
+const tr=(i,ea)=>{const a=G[i%30],o=[a,G[(i+7)%30],G[(i+13)%30],G[(i+19)%30]],s=(k+i)%4;[o[0],o[s]]=[o[s],o[0]];return opts(o.map(x=>[x[ea?1:0],x==a]))};
+h+=`<div class="sec">ترجمة: English → عربي (5)</div>`;for(let i=0;i<5;i++){const a=G[k*10+i];h+=`<div class="card"><div class="q">${n++}. ${a[0]}</div>${tr(k*10+i,1)}</div>`}
+h+=`<div class="sec">ترجمة: عربي → English (5)</div>`;for(let i=5;i<10;i++){const a=G[k*10+i];h+=`<div class="card"><div class="q" style="direction:rtl;text-align:right">${n++}. ${a[1]}</div>${tr(k*10+i,0)}</div>`}
+m.innerHTML=h+`<div class="nv" id="endnav"></div>`;upd()}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b||b.disabled)return;const a=b.dataset.a,v=b.dataset.v,n=+v;if(live&&a!="ch"&&a!="fin")return;
+if(a=="tab"){tab=n;part=0;go();return}
+if(a=="part"){part=n;sum()}else if(a=="prev"){part--;sum()}else if(a=="next"){part++;sum()}else if(a=="toqa"){tab=1;go();return}
+else if(a=="rev"){rev(v);return}else if(a=="ch"){ch(b);return}else if(a=="fin"){fin();return}
+else if(a=="ex"){ex(n)}else if(a=="exams"){exams()}
+scrollTo(0,0)});
+go();try{const s=JSON.parse(localStorage.getItem("xs")||"null");if(s&&s.end>Date.now()){tab=3;ex(s.k,s.end)}else localStorage.removeItem("xs")}catch(e){}
+</script></body></html>
